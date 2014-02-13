@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <title>Web-O-Puzzle</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="css/layout.css" />
+    </head>
+    <body>
+        <section id="scoresDialog" class="scoresDialog">
+            <table id="scores">
+                <tr>
+                    <td>Player</td>
+                    <td>Time</td>
+                    <td>Date</td>
+                    <td>Moves</td>
+                    <td>URL</td>
+                </tr>
+            </table>
+            <div id="noScores" class="noScores">No scores yet. Come on enter your first!</div>
+            <form id="scoreForm" class="scoreForm" action="#">
+                <input id="fplayer" type="text" />
+                <div id="ftime"></div>
+                <div id="fdate"></div>
+                <div id="fmoves"></div>
+                <div id="furl"></div>
+                <input type="submit" value="Save" />
+            </form>
+        </section>
+        <section class="dashboard">
+            <div id="timer" class="timer"></div>
+            <div id="moves" class="moves"></div>
+            <div id="tilesRemaining" class="tilesRemaining"></div>
+        </section>
+        <template id="tileCanvas">
+            <canvas class="tile"></canvas>
+        </template>
+    </body>
+</html>

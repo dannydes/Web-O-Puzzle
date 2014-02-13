@@ -1,0 +1,1 @@
+{"license": "", "description": "Adds a button to turn any web page into a puzzle.", "contributors": [], "author": "danieldesira", "url": "", "name": "web-o-puzzle", "dependencies": ["api-utils", "addon-kit"], "version": "0.4.rev209", "lib": "lib", "fullName": "Web-O-Puzzle", "main": "main", "id": "jid0-9NetH0ITOBkEzWy0uC8cZjYqAx4", "permissions": {"private-browsing": true}}

@@ -1,0 +1,40 @@
+body, .tile { background-color: rgb(0, 0, 0); }
+body { color: rgb(255, 255, 255); }
+.moves:before { content: "Moves: "; }
+.noScores { display: none; }
+.noScores.show { display: block; }
+.tilesRemaining:before { content: "Tiles Remaining: "; }
+
+.dashboard > div, .scoreForm > * {
+    margin-right: 50px;
+    display: inline;
+}
+
+.scoresDialog {
+    display: none;
+    height: 0px;
+    transition: height 300ms;
+}
+
+.scoresDialog.show {
+    display: block;
+    height: 100px;
+}
+
+.tile {
+    position: fixed;
+    z-index: 0;
+    transition: all 400ms;
+}
+
+.tile.selected {
+    z-index: 100;
+    border: rgb(0, 100, 200) 2px solid;
+}
+
+.timer {
+    height: 70px;
+    width: 80px;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 255);
+}
